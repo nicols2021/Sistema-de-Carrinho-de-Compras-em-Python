@@ -2,9 +2,9 @@ import random
 
 class Carrinho:
     def __init__(self):
-        self.produtos = []
-        self.desconto = 0
-        self.cupons = random.randint(0, 3)
+        self.produtos = [] # Lista de Produto que estão no carrinho
+        self.desconto = 0 # Percentual de desconto
+        self.cupons = random.randint(0, 3) # Cupons disponíveis que são de 0 a 3 sempre
 
     def adicionar_produto(self, produto):
         for p in self.produtos:
@@ -39,7 +39,7 @@ class Carrinho:
                 print("Quantidade inválida.")
                 return
 
-            # devolver ao estoque
+            # isso devolve ao estoque
             for p in produtos:
                 if p["nome"].lower() == produto.nome.lower():
                     p["estoque"] += qtd
@@ -78,7 +78,7 @@ class Carrinho:
         if self.cupons <= 0:
             print("Você não possui cupons disponíveis.")
             return
-
+                
         usar = input("Deseja usar um cupom? (s/n): ").lower()
 
         if usar == "s":
@@ -111,4 +111,5 @@ class Carrinho:
         print(f"Subtotal: R$ {self.calcular_total():.2f}")
         print(f"Desconto: {self.desconto}%")
         print(f"TOTAL FINAL: R$ {self.calcular_total_com_desconto():.2f}")
+
         print("=========================\n")

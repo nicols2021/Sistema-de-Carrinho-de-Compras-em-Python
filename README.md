@@ -6,7 +6,8 @@
 
 <div align="center">
 
-  ![GitHub stars](https://img.shields.io/github/stars/username/repo)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Status](https://img.shields.io/badge/status-concluído-green)
 
 </div>
 

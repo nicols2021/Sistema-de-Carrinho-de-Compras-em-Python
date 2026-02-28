@@ -25,13 +25,13 @@ O sistema simula uma compra em mercado, permitindo adicionar e remover produtos,
 - Desconto aleatório entre 5% e 30% aplicado no total
 - Geração de nota fiscal detalhada diretamente no terminal
 
-## 📋 Prerequisites
+## 📋 Pré requesitos
 
 Ter o Python instalado na máquina
 Manter os arquivos main.py, produto.py e carrinho.py na mesma pasta
 
 
-## 💻 Usage
+## 💻 Como usar?
 
 
 Após executar o arquivo main.py, o sistema exibirá um menu interativo no terminal com as opções disponíveis.
